@@ -14,46 +14,47 @@
 body{ 
     font-family: "Inter", monospace;
     font-size: 14px;
-    font-weight: 200;
     color: hsl(0, 0%, 100%);
     background-color: hsl(0, 0%, 8%);
 }
 
 #container {
-    display : block;
-    position:relative;
-    margin-left: auto;
-    margin-right: auto;  
     width: 375px;
-    /* background-color: hsl(0, 0%, 12%);
-    border: 1px solid hsl(0, 0%, 12%);
-    border-radius: 20px; */
-    
+    height: 500px;
+    position: relative;
+    transform: translateY(50%);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #inner-container{
-    position:absolute; 
-    top:50%; 
-    transform: translateY(30%); 
+    display: block;
     background-color: hsl(0, 0%, 12%);
     border: 1px solid hsl(0, 0%, 12%);
     border-radius: 20px;
-    padding: 10%;
+    height: 100%;
+    width:80%;
+    margin-left: 10%;
+}
+
+#person, #button, #attribution {
+    display: block;
 }
 
 button {
+    display: block;
     border: none;
     appearance: none; 
-    display: block;
-    width: 100%;
     background-color: hsl(0, 0%, 20%);
     color:hsl(0, 0%, 100%);
     border-radius: 10px;
     font-family: "Inter", monospace;
     font-weight: 600;
     font-size: 14px;
-    padding: 1em; 
-    margin: 15px auto;
+    width:80%;
+    height: 2rem;
+    margin: 10px auto;
+
 }
 
 button:hover {
@@ -71,11 +72,9 @@ button:active {
 
 img{
     display: block;
-    margin-left:auto;
-    margin-right: auto;
-    margin-bottom: 10%;
-    width: 30%;
+    width: 25%;
     border-radius: 50%;  
+    margin: 1.5rem auto;
 }
 
 h2{
@@ -99,11 +98,35 @@ h4{
 }
 
 .attribution {
-    position:absolute;
-    top: 95%; bottom: 0; left: 0; right: 0;
-    margin: auto;
-    margin-left: 36%;
-    height: 20px;
+    display: block;
+    /* width: 80%; */
+    margin: 10px auto;
+    font-size: 0.5rem;
     font-weight: smaller; 
+    text-align: center;
     font-family: "Inter";
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 375px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  #container {
+    transform: translateY(0%);
+  }
 }
