@@ -23,8 +23,10 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 
 ### Screenshot
-
-![](./screenshot.jpg)
+<p>Social links profile desktop view</p>
+<img width="1677" alt="Social-links-profile-desktop-screenshot" src="https://github.com/FCimendere/Social-Links-Profile/assets/65401609/b8360320-6f55-4ae8-bed4-ed3cd74500f6">
+<p>Social links profile mobile view</p>
+<img width="375" alt="Social-links-profile-mobile-screenshot" src="https://github.com/FCimendere/Social-Links-Profile/assets/65401609/b69e80ff-ddef-4961-abd9-9999f183517f">
 
 ### Links
 
